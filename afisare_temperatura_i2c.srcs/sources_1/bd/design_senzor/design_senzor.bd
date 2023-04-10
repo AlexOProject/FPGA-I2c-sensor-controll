@@ -1,0 +1,440 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x46E361BE620F7F35",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../afisare_temperatura_i2c.gen/sources_1/bd/design_senzor",
+      "name": "design_senzor",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "i2c_read_0": "",
+      "afis_0": "",
+      "controler_0": "",
+      "i2c_master_0": ""
+    },
+    "ports": {
+      "CA_0": {
+        "direction": "O"
+      },
+      "CB_0": {
+        "direction": "O"
+      },
+      "CC_0": {
+        "direction": "O"
+      },
+      "CD_0": {
+        "direction": "O"
+      },
+      "CE_0": {
+        "direction": "O"
+      },
+      "CF_0": {
+        "direction": "O"
+      },
+      "CG_0": {
+        "direction": "O"
+      },
+      "reset": {
+        "direction": "I"
+      },
+      "sda": {
+        "direction": "IO"
+      },
+      "scl": {
+        "direction": "IO"
+      },
+      "busy": {
+        "direction": "O"
+      },
+      "tact": {
+        "direction": "O"
+      },
+      "clk": {
+        "direction": "I"
+      },
+      "an_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "i2c_read_0": {
+        "vlnv": "xilinx.com:module_ref:i2c_read:1.0",
+        "xci_name": "design_senzor_i2c_read_0_0",
+        "xci_path": "ip\\design_senzor_i2c_read_0_0\\design_senzor_i2c_read_0_0.xci",
+        "inst_hier_path": "i2c_read_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "i2c_read",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "dd1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "dd2": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "dd3": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "dd4": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "temp": {
+            "direction": "I",
+            "left": "19",
+            "right": "0"
+          }
+        }
+      },
+      "afis_0": {
+        "vlnv": "xilinx.com:module_ref:afis:1.0",
+        "xci_name": "design_senzor_afis_0_0",
+        "xci_path": "ip\\design_senzor_afis_0_0\\design_senzor_afis_0_0.xci",
+        "inst_hier_path": "afis_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "afis",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "dd1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "dd2": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "dd3": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "dd4": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "an": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "CA": {
+            "direction": "O"
+          },
+          "CB": {
+            "direction": "O"
+          },
+          "CC": {
+            "direction": "O"
+          },
+          "CD": {
+            "direction": "O"
+          },
+          "CE": {
+            "direction": "O"
+          },
+          "CF": {
+            "direction": "O"
+          },
+          "CG": {
+            "direction": "O"
+          }
+        }
+      },
+      "controler_0": {
+        "vlnv": "xilinx.com:module_ref:controler:1.0",
+        "xci_name": "design_senzor_controler_0_0",
+        "xci_path": "ip\\design_senzor_controler_0_0\\design_senzor_controler_0_0.xci",
+        "inst_hier_path": "controler_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "controler",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "reset_n": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "i2c_ack_err": {
+            "direction": "I"
+          },
+          "temperature2": {
+            "direction": "O",
+            "left": "19",
+            "right": "0"
+          },
+          "i2c_ena": {
+            "direction": "O"
+          },
+          "i2c_addr": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "i2c_rw": {
+            "direction": "O"
+          },
+          "i2c_data_wr": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "i2c_data_rd": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "i2c_busy": {
+            "direction": "I"
+          }
+        }
+      },
+      "i2c_master_0": {
+        "vlnv": "xilinx.com:module_ref:i2c_master:1.0",
+        "xci_name": "design_senzor_i2c_master_0_0",
+        "xci_path": "ip\\design_senzor_i2c_master_0_0\\design_senzor_i2c_master_0_0.xci",
+        "inst_hier_path": "i2c_master_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "i2c_master",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "reset_n": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ena": {
+            "direction": "I"
+          },
+          "addr": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "rw": {
+            "direction": "I"
+          },
+          "data_wr": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "busy": {
+            "direction": "O"
+          },
+          "data_rd": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "ack_error": {
+            "direction": "O"
+          },
+          "tact": {
+            "direction": "O"
+          },
+          "sda": {
+            "direction": "IO"
+          },
+          "scl": {
+            "direction": "IO"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "reset",
+          "controler_0/reset_n",
+          "i2c_master_0/reset_n"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "sda",
+          "i2c_master_0/sda"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "scl",
+          "i2c_master_0/scl"
+        ]
+      },
+      "afis_0_CA": {
+        "ports": [
+          "afis_0/CA",
+          "CA_0"
+        ]
+      },
+      "afis_0_CB": {
+        "ports": [
+          "afis_0/CB",
+          "CB_0"
+        ]
+      },
+      "afis_0_CC": {
+        "ports": [
+          "afis_0/CC",
+          "CC_0"
+        ]
+      },
+      "afis_0_CD": {
+        "ports": [
+          "afis_0/CD",
+          "CD_0"
+        ]
+      },
+      "afis_0_CE": {
+        "ports": [
+          "afis_0/CE",
+          "CE_0"
+        ]
+      },
+      "afis_0_CF": {
+        "ports": [
+          "afis_0/CF",
+          "CF_0"
+        ]
+      },
+      "afis_0_CG": {
+        "ports": [
+          "afis_0/CG",
+          "CG_0"
+        ]
+      },
+      "afis_0_an": {
+        "ports": [
+          "afis_0/an",
+          "an_0"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "i2c_read_0/clk",
+          "afis_0/clk",
+          "controler_0/clk",
+          "i2c_master_0/clk"
+        ]
+      },
+      "controler_0_i2c_addr": {
+        "ports": [
+          "controler_0/i2c_addr",
+          "i2c_master_0/addr"
+        ]
+      },
+      "controler_0_i2c_data_wr": {
+        "ports": [
+          "controler_0/i2c_data_wr",
+          "i2c_master_0/data_wr"
+        ]
+      },
+      "controler_0_i2c_ena": {
+        "ports": [
+          "controler_0/i2c_ena",
+          "i2c_master_0/ena"
+        ]
+      },
+      "controler_0_i2c_rw": {
+        "ports": [
+          "controler_0/i2c_rw",
+          "i2c_master_0/rw"
+        ]
+      },
+      "controler_0_temperature2": {
+        "ports": [
+          "controler_0/temperature2",
+          "i2c_read_0/temp"
+        ]
+      },
+      "i2c_master_0_ack_error": {
+        "ports": [
+          "i2c_master_0/ack_error",
+          "controler_0/i2c_ack_err"
+        ]
+      },
+      "i2c_master_0_busy": {
+        "ports": [
+          "i2c_master_0/busy",
+          "busy",
+          "controler_0/i2c_busy"
+        ]
+      },
+      "i2c_master_0_data_rd": {
+        "ports": [
+          "i2c_master_0/data_rd",
+          "controler_0/i2c_data_rd"
+        ]
+      },
+      "i2c_master_0_tact": {
+        "ports": [
+          "i2c_master_0/tact",
+          "tact"
+        ]
+      },
+      "i2c_read_0_dd1": {
+        "ports": [
+          "i2c_read_0/dd1",
+          "afis_0/dd1"
+        ]
+      },
+      "i2c_read_0_dd2": {
+        "ports": [
+          "i2c_read_0/dd2",
+          "afis_0/dd2"
+        ]
+      },
+      "i2c_read_0_dd3": {
+        "ports": [
+          "i2c_read_0/dd3",
+          "afis_0/dd3"
+        ]
+      },
+      "i2c_read_0_dd4": {
+        "ports": [
+          "i2c_read_0/dd4",
+          "afis_0/dd4"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt auto  -L xil_defaultlib -L secureip -L xpm --snapshot design_senzor xil_defaultlib.design_senzor -log elaborate.log

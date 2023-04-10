@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Apr  7 10:01:04 2023" VIVADOVERSION="2022.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="design_senzor" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="CA_0" SIGIS="undef" SIGNAME="afis_0_CA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="afis_0" PORT="CA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CB_0" SIGIS="undef" SIGNAME="afis_0_CB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="afis_0" PORT="CB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC_0" SIGIS="undef" SIGNAME="afis_0_CC">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="afis_0" PORT="CC"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CD_0" SIGIS="undef" SIGNAME="afis_0_CD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="afis_0" PORT="CD"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CE_0" SIGIS="undef" SIGNAME="afis_0_CE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="afis_0" PORT="CE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CF_0" SIGIS="undef" SIGNAME="afis_0_CF">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="afis_0" PORT="CF"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CG_0" SIGIS="undef" SIGNAME="afis_0_CG">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="afis_0" PORT="CG"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset" SIGIS="undef" SIGNAME="External_Ports_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="controler_0" PORT="reset_n"/>
+        <CONNECTION INSTANCE="i2c_master_0" PORT="reset_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="sda" SIGIS="undef" SIGNAME="External_Ports_sda">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="i2c_master_0" PORT="sda"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="scl" SIGIS="undef" SIGNAME="External_Ports_scl">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="i2c_master_0" PORT="scl"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="busy" SIGIS="undef" SIGNAME="i2c_master_0_busy">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="i2c_master_0" PORT="busy"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="tact" SIGIS="undef" SIGNAME="i2c_master_0_tact">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="i2c_master_0" PORT="tact"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="i2c_read_0" PORT="clk"/>
+        <CONNECTION INSTANCE="afis_0" PORT="clk"/>
+        <CONNECTION INSTANCE="controler_0" PORT="clk"/>
+        <CONNECTION INSTANCE="i2c_master_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="an_0" RIGHT="0" SIGIS="undef" SIGNAME="afis_0_an">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="afis_0" PORT="an"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/afis_0" HWVERSION="1.0" INSTANCE="afis_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="afis" VLNV="xilinx.com:module_ref:afis:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_senzor_afis_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="dd1" RIGHT="0" SIGIS="undef" SIGNAME="i2c_read_0_dd1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="i2c_read_0" PORT="dd1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="dd2" RIGHT="0" SIGIS="undef" SIGNAME="i2c_read_0_dd2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="i2c_read_0" PORT="dd2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="dd3" RIGHT="0" SIGIS="undef" SIGNAME="i2c_read_0_dd3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="i2c_read_0" PORT="dd3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="dd4" RIGHT="0" SIGIS="undef" SIGNAME="i2c_read_0_dd4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="i2c_read_0" PORT="dd4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="an" RIGHT="0" SIGIS="undef" SIGNAME="afis_0_an">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="an_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CA" SIGIS="undef" SIGNAME="afis_0_CA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CA_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CB" SIGIS="undef" SIGNAME="afis_0_CB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CB_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC" SIGIS="undef" SIGNAME="afis_0_CC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CD" SIGIS="undef" SIGNAME="afis_0_CD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CD_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CE" SIGIS="undef" SIGNAME="afis_0_CE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CE_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CF" SIGIS="undef" SIGNAME="afis_0_CF">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CF_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CG" SIGIS="undef" SIGNAME="afis_0_CG">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CG_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/controler_0" HWVERSION="1.0" INSTANCE="controler_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="controler" VLNV="xilinx.com:module_ref:controler:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="sys_clk_freq" VALUE="100000000"/>
+        <PARAMETER NAME="temp_sensor_addr2" VALUE="&quot;1011000&quot;"/>
+        <PARAMETER NAME="temp_sensor_addr" VALUE="&quot;0111000&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_senzor_controler_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i2c_ack_err" SIGIS="undef" SIGNAME="i2c_master_0_ack_error">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="i2c_master_0" PORT="ack_error"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="19" NAME="temperature2" RIGHT="0" SIGIS="undef" SIGNAME="controler_0_temperature2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="i2c_read_0" PORT="temp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="i2c_ena" SIGIS="undef" SIGNAME="controler_0_i2c_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="i2c_master_0" PORT="ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="i2c_addr" RIGHT="0" SIGIS="undef" SIGNAME="controler_0_i2c_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="i2c_master_0" PORT="addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="i2c_rw" SIGIS="undef" SIGNAME="controler_0_i2c_rw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="i2c_master_0" PORT="rw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="i2c_data_wr" RIGHT="0" SIGIS="undef" SIGNAME="controler_0_i2c_data_wr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="i2c_master_0" PORT="data_wr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="i2c_data_rd" RIGHT="0" SIGIS="undef" SIGNAME="i2c_master_0_data_rd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="i2c_master_0" PORT="data_rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i2c_busy" SIGIS="undef" SIGNAME="i2c_master_0_busy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="i2c_master_0" PORT="busy"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/i2c_master_0" HWVERSION="1.0" INSTANCE="i2c_master_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="i2c_master" VLNV="xilinx.com:module_ref:i2c_master:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="input_clk" VALUE="100000000"/>
+        <PARAMETER NAME="bus_clk" VALUE="100000"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_senzor_i2c_master_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ena" SIGIS="undef" SIGNAME="controler_0_i2c_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controler_0" PORT="i2c_ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="6" NAME="addr" RIGHT="0" SIGIS="undef" SIGNAME="controler_0_i2c_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controler_0" PORT="i2c_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rw" SIGIS="undef" SIGNAME="controler_0_i2c_rw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controler_0" PORT="i2c_rw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="data_wr" RIGHT="0" SIGIS="undef" SIGNAME="controler_0_i2c_data_wr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controler_0" PORT="i2c_data_wr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="busy" SIGIS="undef" SIGNAME="i2c_master_0_busy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="busy"/>
+            <CONNECTION INSTANCE="controler_0" PORT="i2c_busy"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="data_rd" RIGHT="0" SIGIS="undef" SIGNAME="i2c_master_0_data_rd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controler_0" PORT="i2c_data_rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ack_error" SIGIS="undef" SIGNAME="i2c_master_0_ack_error">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controler_0" PORT="i2c_ack_err"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="tact" SIGIS="undef" SIGNAME="i2c_master_0_tact">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="tact"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="sda" SIGIS="undef" SIGNAME="External_Ports_sda">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sda"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="scl" SIGIS="undef" SIGNAME="External_Ports_scl">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="scl"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/i2c_read_0" HWVERSION="1.0" INSTANCE="i2c_read_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="i2c_read" VLNV="xilinx.com:module_ref:i2c_read:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_senzor_i2c_read_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="dd1" RIGHT="0" SIGIS="undef" SIGNAME="i2c_read_0_dd1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="afis_0" PORT="dd1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="dd2" RIGHT="0" SIGIS="undef" SIGNAME="i2c_read_0_dd2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="afis_0" PORT="dd2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="dd3" RIGHT="0" SIGIS="undef" SIGNAME="i2c_read_0_dd3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="afis_0" PORT="dd3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="dd4" RIGHT="0" SIGIS="undef" SIGNAME="i2c_read_0_dd4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="afis_0" PORT="dd4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="19" NAME="temp" RIGHT="0" SIGIS="undef" SIGNAME="controler_0_temperature2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controler_0" PORT="temperature2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

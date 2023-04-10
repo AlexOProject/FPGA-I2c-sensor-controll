@@ -1,0 +1,20 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.srcs/sources_1/new/controler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controler'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.srcs/sources_1/new/master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2c_master'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.srcs/sources_1/new/citire.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2c_read'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.srcs/sources_1/new/afisaj.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'afis'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.ip_user_files/bd/design_senzor/ip/design_senzor_controler_0_0/sim/design_senzor_controler_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_senzor_controler_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.ip_user_files/bd/design_senzor/ip/design_senzor_i2c_master_0_0/sim/design_senzor_i2c_master_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_senzor_i2c_master_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.ip_user_files/bd/design_senzor/ip/design_senzor_i2c_read_0_0/sim/design_senzor_i2c_read_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_senzor_i2c_read_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.ip_user_files/bd/design_senzor/ip/design_senzor_afis_0_0/sim/design_senzor_afis_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_senzor_afis_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.ip_user_files/bd/design_senzor/sim/design_senzor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_senzor'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.gen/sources_1/bd/design_senzor/hdl/design_senzor_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_senzor_wrapper'

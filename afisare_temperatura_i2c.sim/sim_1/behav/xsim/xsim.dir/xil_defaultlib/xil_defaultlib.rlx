@@ -1,0 +1,14 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.gen/sources_1/bd/design_senzor/hdl/design_senzor_wrapper.vhd,1678953965,vhdl,,,,design_senzor_wrapper,,,,,,,,
+D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.ip_user_files/bd/design_senzor/ip/design_senzor_afis_0_0/sim/design_senzor_afis_0_0.vhd,1678953965,vhdl,,,,design_senzor_afis_0_0,,,,,,,,
+D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.ip_user_files/bd/design_senzor/ip/design_senzor_controler_0_0/sim/design_senzor_controler_0_0.vhd,1678953965,vhdl,,,,design_senzor_controler_0_0,,,,,,,,
+D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.ip_user_files/bd/design_senzor/ip/design_senzor_i2c_master_0_0/sim/design_senzor_i2c_master_0_0.vhd,1678953965,vhdl,,,,design_senzor_i2c_master_0_0,,,,,,,,
+D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.ip_user_files/bd/design_senzor/ip/design_senzor_i2c_read_0_0/sim/design_senzor_i2c_read_0_0.vhd,1678953965,vhdl,,,,design_senzor_i2c_read_0_0,,,,,,,,
+D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.ip_user_files/bd/design_senzor/sim/design_senzor.vhd,1678953965,vhdl,,,,design_senzor,,,,,,,,
+D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.srcs/sources_1/new/afisaj.vhd,1678952883,vhdl,,,,afis,,,,,,,,
+D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.srcs/sources_1/new/citire.vhd,1678952880,vhdl,,,,i2c_read,,,,,,,,
+D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.srcs/sources_1/new/controler.vhd,1678953895,vhdl,,,,controler,,,,,,,,
+D:/FPGA/afisare_temperatura_i2c/afisare_temperatura_i2c.srcs/sources_1/new/master.vhd,1678952797,vhdl,,,,i2c_master,,,,,,,,
